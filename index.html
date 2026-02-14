@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MountainTop | Fine Dining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">MountainTop</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cart-icon" id="cart-toggle">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Our Culinary Selection</h1>
+    <p>Experience refined flavors crafted with passion.</p>
+</section>
+
+<section class="filters">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Appetizers">Appetizers</button>
+    <button class="filter-btn" data-category="Mains">Mains</button>
+    <button class="filter-btn" data-category="Desserts">Desserts</button>
+    <button class="filter-btn" data-category="Drinks">Drinks</button>
+</section>
+
+<main class="menu-container" id="menu-container">
+    
+</main>
+
+<aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Order</h2>
+        <button id="close-cart">✕</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn" class="checkout-btn">Place Order</button>
+    </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
