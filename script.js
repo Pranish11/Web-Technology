@@ -75,6 +75,7 @@ const cartCount = document.getElementById("cart-count");
 let cart = [];
 
 function renderMenu(items) {
+    if (!menuContainer) return;
     menuContainer.innerHTML = "";
     items.forEach(item => {
         const div = document.createElement("div");
@@ -180,10 +181,8 @@ function closeCart() {
 
 document.getElementById("checkout-btn").addEventListener("click", () => {
     if (cart.length === 0) return;
-    alert("Thank you for your order!");
-    cart = [];
-    updateCart();
-    closeCart();
+    // Redirect user to login page when trying to place an order
+    window.location.href = "login.html";
 });
 
 renderMenu(menuData);

@@ -1,0 +1,105 @@
+/* Page specific styles for Login */
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Center the login form */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-login:hover {
+    background-color: #444;
+}
+
+.login-footer {
+    margin-top: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-footer a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

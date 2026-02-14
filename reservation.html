@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MountainTop | Reservations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">MountainTop</a></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="cart-icon" id="cart-toggle">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<main>
+    <div class="reservation-card">
+        <h2>Book a Table</h2>
+        <p>Reserve your spot for an unforgettable dining experience</p>
+        
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Number of Guests" required>
+            </div>
+
+            <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" rows="3" placeholder="Any special requests? (e.g., allergies, seating preference)"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-reservation">Reserve Now</button>
+        </form>
+    </div>
+</main>
+
+<aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Order</h2>
+        <button id="close-cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn" class="checkout-btn">Place Order</button>
+    </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
